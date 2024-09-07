@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { navLinks } from "../lib/constants"
+import { navLinks } from "../../lib/constants"
 
 const NavItems = () => {
     return (
@@ -29,6 +29,8 @@ export default function Navbar() {
 
     return (
         <header className='fixed top-0 left-0 ring-0 z-50 bg-black/90 w-full'>
+
+            {/* DESKTOP NAV */}
             <div className="max-w-7xl mx-auto">
                 <div className="flex justify-between items-center py-5 mx-auto c-space">
                     <a
@@ -53,6 +55,7 @@ export default function Navbar() {
                     </nav>
                 </div>
             </div>
+
             {/* MOBILE NAV */}
             <div className={`nav-sidebar ${isOpen ? 'max-h-screen' : 'max-h-0'}`}>
                 <nav className="p-5">
